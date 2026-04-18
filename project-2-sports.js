@@ -60,12 +60,8 @@ export class Project2Sports extends DDDSuper(I18NMixin(LitElement)) {
       .wrapper {
         margin: var(--ddd-spacing-0);
       }
-
-      project-2-homepage{
-        display: block;
-      }
-
-      .homeImage{
+    
+       .homeImage{
         position: relative;
         display: flex;
         color: var(--ddd-theme-default-roarGolden);
@@ -84,76 +80,13 @@ export class Project2Sports extends DDDSuper(I18NMixin(LitElement)) {
       h3{
         font-size: 100px;
       }
-
+      
       project-2-textbox{
         display: block;
         border: var(--ddd-border-md);
         padding-left: var(--ddd-spacing-3);
       }
-
-      project-2-navbar{
-      width: 100vw;
-      display: inline-block;
-      border: var(--ddd-border-xs);
-    }
-
-    project-2-creatortag{
-      display: inline-block;
-      border: var(--ddd-border-xs);
-      justify-content: left;
-    }
-
-    .buttons {
-      border: var(--ddd-border-xs);
-      display: block;
-      text-align: right;
-      padding: var(--ddd-spacing-1);
-    }
-
-    .project-2-button{
-      z-index: 1;
-      display: inline-block;
-      width: 200px;
-      padding: var(--ddd-spacing-0);
-      font-size: 20px;
-      position: relative;
-      .dropdown{
-        display: none;
-      }
-    }
-
-    .droplink{
-      display: block;
-      width: 200px;
-      display: grid;
-      border-bottom: var(--ddd-border-md);
-      font-size: 35px;
-      text-align: center;
-      color: red;
-      place-items: center;
-      background-color: green;
-    }
-    
-    .dropbutton{
-      border: var(--ddd-border-md);
-      display: block;
-      height: 50px;
-      width: 200px;
-      font-size: 35px;
-    }
-
-    .project-2-button:hover{
-      .dropdown{
-        position: absolute;
-      display: block;
-       }
-    }
-
-    .dropbutton:hover{
-      background-color: green;
-      overflow: scroll;
-      color: red;
-    }
+      
     `];
   }
 
@@ -161,28 +94,8 @@ export class Project2Sports extends DDDSuper(I18NMixin(LitElement)) {
   render() {
     return html`
 <div class="wrapper">
-    <project-2-navbar>
-    <section class="buttons">
-      <div class="project-2-button">
-      <button id="sportsButton" class="dropbutton">Sports</button>
-        <div class=dropdown>
-        <a class="droplink" href="https://youtu.be/dQw4w9WgXcQ?si=XXbxb65FXc2WTeo3">Grudgby</a>
-        <a class="droplink" href="https://youtu.be/dQw4w9WgXcQ?si=XXbxb65FXc2WTeo3">Flyer Derby</a>
-        </div>
-      </div>
-      <div class="project-2-button">
-        <button id="teamsButton" class="dropbutton">Teams</button>
-        <div class=dropdown>
-        <a class="droplink" href="https://youtu.be/dQw4w9WgXcQ?si=XXbxb65FXc2WTeo3">Banshees</a>
-        <a class="droplink" href="https://youtu.be/dQw4w9WgXcQ?si=XXbxb65FXc2WTeo3">Emerald Entrails</a>
-        </div>
-      </div>
-      <div class="project-2-button">
-        <button id="scheduleButton" class="dropbutton">Schedule</button>
-      </div>
-    </section>
-    </project-2-navbar>
-  <slot></slot>
+  <div class="homeImage"><h3>Welcome to the <br> Hexside School of Magic and Demonics</h3></div>
+  <project-2-textbox>Welcome to the Hexside School of Magic and Demonics</project-2-textbox>
 </div>`;
   }
 
