@@ -28,7 +28,6 @@ export class Project2Sports extends DDDSuper(I18NMixin(LitElement)) {
       ...this.t,
       title: "Title",
     };
-    this.homeImage = new URL(`./assets/HomeImage.jpeg`, import.meta.url).href;
     this.activePage = window.location.hash.replace("#", "") || "home";
     this.registerLocalization({
       context: this,
