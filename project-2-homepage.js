@@ -12,10 +12,10 @@ import { I18NMixin } from "@haxtheweb/i18n-manager/lib/I18NMixin.js";
  * @demo index.html
  * @element project-2-sports
  */
-export class Project2creatortag extends DDDSuper(I18NMixin(LitElement)) {
+export class Project2homepage extends DDDSuper(I18NMixin(LitElement)) {
 
   static get tag() {
-    return "project-2-creatortag";
+    return "project-2-homepage";
   }
 
   constructor() {
@@ -26,6 +26,7 @@ export class Project2creatortag extends DDDSuper(I18NMixin(LitElement)) {
       ...this.t,
       title: "Title",
     };
+    //this.homeImage = new URL(`./assets/HomeImage.jpeg`, import.meta.url).href;
     this.registerLocalization({
       context: this,
       localesPath:
@@ -38,6 +39,7 @@ export class Project2creatortag extends DDDSuper(I18NMixin(LitElement)) {
   static get properties() {
     return {
       ...super.properties,
+      //homeImage: { type: String },
       title: { type: String },
     };
   }
@@ -57,17 +59,31 @@ export class Project2creatortag extends DDDSuper(I18NMixin(LitElement)) {
         padding: var(--ddd-spacing-4);
       }
 
-      .avatar{
-      display: inline-block;
-      height: 70px;
-      width: 70px;
-      background-color: var(--ddd-theme-default-white);
-      border-radius: var(--ddd-radius-circle);
-    }
+      .homeImage{
+        position: relative;
+        display: flex;
+        color: var(--ddd-theme-default-roarGolden);
+        text-align: center;
+        padding-left: var(--ddd-spacing-0);
+        align-items: center;
+        justify-content: center;
+        background-image: url("./assets/HomeImage.jpeg");
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        background-color: rgba(255, 255, 255, .5);
+        height: 75vh;
+        background-blend-mode: lighten;
+      }
 
-    .avatarText{
-      display: inline-block
-    }
+      h3{
+        font-size: 100px;
+      }
+      
+      project-2-textbox{
+        display: block;
+        border: var(--ddd-border-md);
+        padding-left: var(--ddd-spacing-3);
+      }
     `];
   }
 
@@ -75,8 +91,7 @@ export class Project2creatortag extends DDDSuper(I18NMixin(LitElement)) {
   render() {
     return html`
 <div class="wrapper">
-    <img class="avatar" alt="author" src="./assets/General/1-Light_glyph.png">
-    <h3 class="avatarText">JonChiu-programs</h3>
+  <slot></slot>
 </div>`;
   }
 
@@ -89,4 +104,4 @@ export class Project2creatortag extends DDDSuper(I18NMixin(LitElement)) {
   }
 }
 
-globalThis.customElements.define(Project2creatortag.tag, Project2creatortag);
+globalThis.customElements.define(Project2homepage.tag, Project2homepage);
