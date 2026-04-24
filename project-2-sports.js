@@ -66,7 +66,7 @@ export class Project2Sports extends DDDSuper(I18NMixin(LitElement)) {
         padding-left: var(--ddd-spacing-0);
         align-items: center;
         justify-content: center;
-        background-image: url('/assets/General/HomeImage.jpeg');
+        background-image: url('./assets/General/HomeImage.jpeg');
         background-repeat: no-repeat;
         background-size: 100% 100%;
         background-color: rgba(255, 255, 255, .5);
@@ -228,9 +228,9 @@ export class Project2Sports extends DDDSuper(I18NMixin(LitElement)) {
         </ul>
         </project-2-textbox>
         <project-2-imgHolder>
-          <img class= "sportsImg" alt= "sportsImg" src="/assets/Sports/Grudgby/GrudgbyImg.jpeg">
-          <img class= "sportsImg" alt= "sportsImg" src="/assets/Sports/Grudgby/Clawthornes.jpeg">
-          <img class= "sportsImg" alt= "sportsImg" src="/assets/Sports/Grudgby/RustySmidge.jpeg">
+          <img class= "sportsImg" alt= "sportsImg" src="./assets/Sports/Grudgby/GrudgbyImg.jpeg">
+          <img class= "sportsImg" alt= "sportsImg" src="./assets/Sports/Grudgby/Clawthornes.jpeg">
+          <img class= "sportsImg" alt= "sportsImg" src="./assets/Sports/Grudgby/RustySmidge.jpeg">
         </project-2-imgHolder>
       </project-2-webpage>
     `;
