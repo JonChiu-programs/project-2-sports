@@ -66,7 +66,7 @@ export class Project2Sports extends DDDSuper(I18NMixin(LitElement)) {
         padding-left: var(--ddd-spacing-0);
         align-items: center;
         justify-content: center;
-        background-image: url("/assets/General/HomeImage.jpeg");
+        background-image: url("${new URL('./assets/General/HomeImage.jpeg', import.meta.url).href}");
         background-repeat: no-repeat;
         background-size: 100% 100%;
         background-color: rgba(255, 255, 255, .5);
