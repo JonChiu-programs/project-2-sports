@@ -27,8 +27,8 @@
     }
 
     project-2-creatortag{
-      display: inline-block;
-      justify-content: left;
+      display: flex;
+      justify-content: flex-start;
     }
 
     .buttons {
@@ -45,14 +45,14 @@
       padding: var(--ddd-spacing-0);
       font-size: 20px;
       position: relative;
+    }
 
-      .dropdown{
-        display: none;
-      }
+    .project-2-button .dropdown{
+      display: none;
     }
 
     .droplink{
-      display: block;
+      display: grid;
       width: 200px;
       display: grid;
       border-bottom: var(--ddd-border-md);
@@ -71,11 +71,9 @@
       font-size: 35px;
     }
 
-    .project-2-button:hover{
-      .dropdown{
+    .project-2-button:hover .dropdown{
         position: absolute;
         display: block;
-       }
     }
 
     .dropbutton:hover{
