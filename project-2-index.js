@@ -1,4 +1,3 @@
-import "./styles.css";
 const routes = {
   "/": {
     linkLabel: "Home",
