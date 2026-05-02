@@ -12,10 +12,10 @@ import { I18NMixin } from "@haxtheweb/i18n-manager/lib/I18NMixin.js";
  * @demo index.html
  * @element project-2-sports
  */
-export class Project2homepage extends DDDSuper(I18NMixin(LitElement)) {
+export class Project2cardHolder extends DDDSuper(I18NMixin(LitElement)) {
 
   static get tag() {
-    return "project-2-homepage";
+    return "project-2-cardHolder";
   }
 
   constructor() {
@@ -54,20 +54,6 @@ export class Project2homepage extends DDDSuper(I18NMixin(LitElement)) {
         background-color: var(--ddd-theme-accent);
         font-family: var(--ddd-font-navigation);
       }
-      .wrapper {
-        margin: var(--ddd-spacing-2);
-        padding: var(--ddd-spacing-4);
-      }
-
-      h3{
-        font-size: 100px;
-      }
-      
-      project-2-textbox{
-        display: block;
-        border: var(--ddd-border-md);
-        padding-left: var(--ddd-spacing-3);
-      }
     `];
   }
 
@@ -88,4 +74,4 @@ export class Project2homepage extends DDDSuper(I18NMixin(LitElement)) {
   }
 }
 
-globalThis.customElements.define(Project2homepage.tag, Project2homepage);
+globalThis.customElements.define(Project2cardHolder.tag, Project2cardHolder);

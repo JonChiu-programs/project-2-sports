@@ -132,6 +132,38 @@ export class Project2Sports extends DDDSuper(I18NMixin(LitElement)) {
         width: 30vw;
         padding: var(--ddd-spacing-3);
       }
+
+      project-2-cardHolder{
+        display: flex;
+        border: var(--ddd-border-md);
+        padding: var(--ddd-spacing-0);
+        height: 45vh;
+        align-content: center;
+        justify-content: center;
+      }
+
+      .scheduleText{
+        text-align: center;
+      }
+
+      .scheduleCard{
+        display: inline-block;
+        border: var(--ddd-border-md);
+        margin: var(--ddd-spacing-2);
+        padding: var(--ddd-spacing-3);
+        width: 10vw;
+        height: 40vh;
+        text-align: center;
+        font-size: 30px;
+      }
+
+      .scheduleCard h1{
+        font-size: 30px;
+      }
+
+      .scheduleCard strong{
+        font-size: 35px;
+      }
       
     `];
   }
@@ -180,8 +212,9 @@ export class Project2Sports extends DDDSuper(I18NMixin(LitElement)) {
     return html`
       <project-2-homepage>
         <div class="homeImage"><h3>Welcome to the <br> Hexside School of Magic and Demonics</h3></div>
-        <project-2-textbox>Welcome to the Hexside School of Magic and Demonics.</project-2-textbox>
+        <project-2-textbox class="homeText">Welcome to the Hexside School of Magic and Demonics.</project-2-textbox>
       </project-2-homepage>
+      ${this.renderSchedule()}
     `;
   }
 
@@ -223,8 +256,8 @@ export class Project2Sports extends DDDSuper(I18NMixin(LitElement)) {
           <p>Whether you're flying high in Flyer Derby or smashing balls in Grudgby, 
           Hexside has the most competitive athletic programs in the realm.</p>
         <ul>
-          <li><strong>Grudgby:</strong> A high-stakes, magical version of rugby played on the ground and in the air.</li>
-          <li><strong>Flyer Derby:</strong> A team-based flight competition focusing on speed and agility.</li>
+          <li><strong>Grudgby:</strong> A high-stakes, magical version of rugby played on the ground and in the air. </li>
+          <li><strong>A History of Victory:</strong> Hexside has always had a grudgby team who delivers nothing but victory, with this reputation forged by the Clawthorne sister dueo, Edalyn and Lilith.</li>
         </ul>
         </project-2-textbox>
         <project-2-imgHolder>
@@ -233,6 +266,83 @@ export class Project2Sports extends DDDSuper(I18NMixin(LitElement)) {
           <img class= "sportsImg" alt= "sportsImg" src="./assets/Sports/Grudgby/RustySmidge.jpeg">
         </project-2-imgHolder>
       </project-2-webpage>
+    `;
+  }
+
+  renderSchedule() {
+    return html `
+      <project-2-schedule>
+        <project-2-textbox class="scheduleText">
+          <h2>2026 Season Schedule</h2>
+          <p>Get ready for an action-packed season of Hexside sports! Here's the schedule for our upcoming games:</p>
+        </project-2-textbox>
+        <project-2-cardHolder>
+
+          <project-2-card class="scheduleCard">
+            <h1>May 2, 2026</h1>
+            <strong>Grudgby <br> vs. <br> St. Epdierm</strong>
+            <br>
+            <br>
+            home game
+          </project-2-card>
+
+          <project-2-card class="scheduleCard">
+            <h1>May 2, 2026</h1>
+            <strong>Grudgby <br> vs. <br> St. Epdierm</strong>
+            <br>
+            <br>
+            home game
+          </project-2-card>
+
+          <project-2-card class="scheduleCard">
+            <h1>May 2, 2026</h1>
+            <strong>Grudgby <br> vs. <br> St. Epdierm</strong>
+            <br>
+            <br>
+            home game
+          </project-2-card>
+
+          <project-2-card class="scheduleCard">
+            <h1>May 2, 2026</h1>
+            <strong>Grudgby <br> vs. <br> St. Epdierm</strong>
+            <br>
+            <br>
+            home game
+          </project-2-card>
+
+          <project-2-card class="scheduleCard">
+            <h1>May 2, 2026</h1>
+            <strong>Grudgby <br> vs. <br> St. Epdierm</strong>
+            <br>
+            <br>
+            home game
+          </project-2-card>
+
+          <project-2-card class="scheduleCard">
+            <h1>May 2, 2026</h1>
+            <strong>Grudgby <br> vs. <br> St. Epdierm</strong>
+            <br>
+            <br>
+            home game
+          </project-2-card>
+
+          <project-2-card class="scheduleCard">
+            <h1>May 2, 2026</h1>
+            <strong>Grudgby <br> vs. <br> St. Epdierm</strong>
+            <br>
+            <br>
+            home game
+          </project-2-card>
+
+          <project-2-card class="scheduleCard">
+            <h1>May 2, 2026</h1>
+            <strong>Grudgby <br> vs. <br> St. Epdierm</strong>
+            <br>
+            <br>
+            home game
+          </project-2-card>
+        </project-2-cardHolder>
+      </project-2-schedule>
     `;
   }
 

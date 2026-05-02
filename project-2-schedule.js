@@ -12,10 +12,10 @@ import { I18NMixin } from "@haxtheweb/i18n-manager/lib/I18NMixin.js";
  * @demo index.html
  * @element project-2-sports
  */
-export class Project2homepage extends DDDSuper(I18NMixin(LitElement)) {
+export class Project2schedule extends DDDSuper(I18NMixin(LitElement)) {
 
   static get tag() {
-    return "project-2-homepage";
+    return "project-2-schedule";
   }
 
   constructor() {
@@ -88,4 +88,4 @@ export class Project2homepage extends DDDSuper(I18NMixin(LitElement)) {
   }
 }
 
-globalThis.customElements.define(Project2homepage.tag, Project2homepage);
+globalThis.customElements.define(Project2schedule.tag, Project2schedule);
